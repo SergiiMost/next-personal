@@ -1,16 +1,130 @@
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --orange: rgb(255, 112, 32);
+  --blue: #3c61e4;
+  --black: #383636;
+  --light: rgb(231, 222, 222);
+}
+
+body[data-theme='light'] {
+  --theme-body-background: white;
+  --theme-text: var(--black);
+  --theme-blue: var(--blue);
+  --theme-label-background: #f6f6f6;
+}
+
+body[data-theme='dark'] {
+  --theme-body-background: rgb(47, 47, 54);
+  --theme-text: var(--light);
+  --theme-blue: #89a2f9;
+  --theme-label-background: #524545;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+  background-color: var(--theme-body-background);
+  color: var(--theme-text);
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.content-container {
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.circledIcon {
+  width: 20px;
+  height: 20px;
+  color: var(--theme-text);
+}
+
+.circledIconContainer {
+  padding: 2px 4px;
+  border: 2px solid rgba(60, 97, 228, 0.5);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.circledIconContainerLink {
+  padding: 4px;
+}
+
+.circledIconContainer:hover {
+  cursor: pointer;
+  border: 2px solid var(--blue);
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: var(--theme-blue);
 }
 
-* {
-  box-sizing: border-box;
+.content-container a:hover {
+  opacity: 0.7;
+}
+
+.react-icons {
+  vertical-align: middle;
+}
+
+.u-fw-400 {
+  font-weight: 400;
+}
+
+.u-align-center {
+  display: flex;
+  align-items: center;
+}
+
+.u-mr-10 {
+  margin-right: 10px;
+}
+
+.u-mr-3 {
+  margin-right: 3px;
+}
+
+.u-ml-3 {
+  margin-left: 3px;
+}
+
+.u-mb-10 {
+  margin-bottom: 10px;
+}
+
+.u-mb-05 {
+  margin-bottom: 5px;
+}
+
+.u-my-20 {
+  margin: 20px 0;
 }

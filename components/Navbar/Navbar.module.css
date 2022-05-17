@@ -1,0 +1,24 @@
+.container {
+  max-width: 1124px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 25px 0px;
+  border-bottom: 1px solid rgba(255, 112, 32, 0.1);
+}
+
+.iconsWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.logoLink {
+  display: flex;
+}
+
+@media screen and (max-width: 550px) {
+  .iconsWrapper {
+    padding: 0 10px;
+  }
+}

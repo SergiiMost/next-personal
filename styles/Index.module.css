@@ -1,0 +1,107 @@
+.headingContainer {
+  margin-top: 80px;
+}
+
+.headingSecondary {
+  display: block;
+  color: var(--theme-text);
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+.headingPrimary {
+  display: block;
+  font-weight: 400;
+  max-width: 560px;
+  color: var(--orange);
+  font-size: 3.6rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.headingDescription {
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--theme-text);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.technologies,
+.certifications,
+.projects {
+  margin-top: 70px;
+}
+
+.technologiesContainer {
+  display: flex;
+  margin-top: 20px;
+}
+
+.techDirection {
+  min-width: 100px;
+}
+
+.techContainer {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--theme-label-background);
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.techContainer span {
+  margin-left: 3px;
+}
+
+.certContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.certContainer svg {
+  margin-right: 10px;
+}
+
+.projectContainer {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 112, 32, 0.15);
+  margin-top: 20px;
+}
+
+.projectHeader {
+  font-size: inherit;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.projectLinksContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.projectLink {
+  display: flex;
+  align-items: center;
+}
+
+.projectLink svg {
+  margin-right: 5px;
+}
+
+.contentContainer a:hover {
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 550px) {
+  .technologies .technologiesContainer {
+    flex-direction: column;
+  }
+}

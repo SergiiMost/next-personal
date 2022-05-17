@@ -1,0 +1,23 @@
+.headingWrapper {
+  text-align: center;
+}
+
+.headingGradient span {
+  font-weight: 400;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 0, 255, 0) 0%,
+    rgba(255, 0, 255, 0) 5%,
+    rgba(255, 112, 32, 0.7) 5%,
+    rgba(255, 112, 32, 0.7) 15%,
+    rgba(255, 0, 255, 0) 15%
+  );
+  color: var(--theme-text);
+  text-transform: capitalize;
+}
+
+.headingPadding span {
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  padding: 0rem 1rem;
+}
