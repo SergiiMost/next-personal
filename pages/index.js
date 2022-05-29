@@ -126,6 +126,16 @@ export default function Home({ theme, toggleTheme }) {
                 , Dec 2021 )
               </span>
             </div>
+            <div className={styles.certContainer}>
+              <SiAngular size='24px' color='#d82d2f' style={{ minWidth: '24px' }} />
+              <span>
+                Advanced Angular ({' '}
+                <a href='https://www.angularacademy.ca/' target='_blank' rel='noreferrer'>
+                  Angular Academy
+                </a>{' '}
+                , May 2022 )
+              </span>
+            </div>
           </div>
           {/* Projects*/}
           <div className={styles.projects} id='projects'>
