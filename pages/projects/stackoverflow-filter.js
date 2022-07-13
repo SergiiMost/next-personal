@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Zoom from 'react-medium-image-zoom'
 import Navbar from '../../components/Navbar/Navbar'
 import Footer from '../../components/Footer/Footer'
@@ -42,7 +43,13 @@ export default function SoFilter({ theme, toggleTheme }) {
           <div className={styles.imageContainer}>
             <figure>
               <Zoom shouldRespectMaxDimension='true' overlayBgColorEnd={overlayColor}>
-                <img alt='A screenshot of the UI' src='/images/so-ui.png' className={styles.image} />
+                <Image
+                  src='/images/so-ui.png'
+                  width='700'
+                  height='473'
+                  className={styles.image}
+                  alt='A screenshot of the UI'
+                />
               </Zoom>
               <figcaption className={styles.figcaption}>A screenshot of the UI.</figcaption>
             </figure>
@@ -68,7 +75,13 @@ export default function SoFilter({ theme, toggleTheme }) {
           <div className='u-my-20'>
             <figure>
               <Zoom shouldRespectMaxDimension='true' overlayBgColorEnd={overlayColor}>
-                <img alt='A screenshot of the UI with a tag error' src='/images/so-tag2.png' className={styles.image} />
+                <Image
+                  src='/images/so-tag2.png'
+                  width='700'
+                  height='185'
+                  alt='A screenshot of the UI with a tag error'
+                  className={styles.image}
+                />
               </Zoom>
               <figcaption className={styles.figcaption}>Tag validation.</figcaption>
             </figure>

@@ -44,8 +44,13 @@ export default function ShopifyChallenge({ theme, toggleTheme }) {
           <div className={styles.imageContainer}>
             <figure>
               <Zoom shouldRespectMaxDimension='true' overlayBgColorEnd={overlayColor}>
-                {/* <img alt='A screenshot of the UI' src='/images/shopify-lg.png' className={styles.image} /> */}
-                <Image src='/images/shopify-lg.png' width='700' height='740' className={styles.image} />
+                <Image
+                  src='/images/shopify-lg.png'
+                  width='700'
+                  height='740'
+                  className={styles.image}
+                  alt='A screenshot of the UI'
+                />
               </Zoom>
               <figcaption className={styles.figcaption}>A screenshot of the UI.</figcaption>
             </figure>
