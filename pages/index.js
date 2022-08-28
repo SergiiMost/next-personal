@@ -140,7 +140,7 @@ export default function Home({ theme, toggleTheme }) {
           {/* Projects*/}
           <div className={styles.projects} id='projects'>
             <Heading tag='h3'> projects</Heading>
-            <div className={styles.projectContainer}>
+            {/* <div className={styles.projectContainer}>
               <h3 className={styles.projectHeader}>Shopify's internship challenge </h3>
               <p className={styles.projectDescription}>
                 a webpage that can search{' '}
@@ -186,7 +186,7 @@ export default function Home({ theme, toggleTheme }) {
                   visit
                 </a>
               </div>
-            </div>
+            </div> */}
             {/*Project 2*/}
             <div className={styles.projectContainer}>
               <h3 className={styles.projectHeader}>Stackoverflow's filter </h3>
