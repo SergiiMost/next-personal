@@ -96,6 +96,11 @@
   margin-right: 5px;
 }
 
+.certSvg {
+  min-width: 24px;
+  width: 24px;
+}
+
 .contentContainer a:hover {
   opacity: 0.7;
 }

@@ -58,19 +58,20 @@ export default function SoFilter({ theme, toggleTheme }) {
         <main>
           <h2 className={styles.headerSecondary}>Project context</h2>
           <p className='u-mb-10'>
-            I’m a huge fan of Stack Overflow (SO), and I also have ~ 1.7k reputation points on the platform. SO is a
-            very well-engineered project. Yet, I wanted to be able to select good questions within a specific time
-            frame. Good questions are usually questions that get 3 upvotes or more.
+            I'm a devoted Stack Overflow (SO) enthusiast with approximately 2.3k reputation points on the platform. SO
+            is a remarkably well-engineered platform. However, I had a desire to efficiently identify high-quality
+            questions within a specified timeframe. In this context, 'good questions' typically refer to those that
+            receive three or more upvotes.
           </p>
           <p className='u-mb-10'>
-            As far as I know, SO’s user interface doesn’t have functionality that facilitates searching for questions
-            based on the requirements mentioned before. For example, I wanted to be able to find questions that have 5
-            upvotes or more with tags "javascript, react" and were asked in the last 2 weeks.
+            As far as I'm aware, Stack Overflow's user interface lacks the functionality to easily search for questions
+            based on the aforementioned criteria. For instance, I sought the ability to locate questions with five or
+            more upvotes, tagged with 'javascript' and 'react,' and asked within the past two weeks.
           </p>
           <p>
-            After going through SO's API documentation, I figured out that there was a way to fetch data that satisfied
-            my requirements. The rest was just a matter of creating a decent UI. In order to improve UX, I also
-            implemented tag validation. For example, 'javaxd' is not the correct tag.
+            After reviewing Stack Overflow's API documentation, I discovered a way to retrieve data that met my
+            criteria. The subsequent steps primarily involved designing a user-friendly interface. To enhance the user
+            experience, I also incorporated tag validation; for instance, 'javaxd' is not a valid tag.
           </p>
           <div className='u-my-20'>
             <figure>
@@ -88,8 +89,9 @@ export default function SoFilter({ theme, toggleTheme }) {
           </div>
           <h2 className={styles.headerSecondary}>Final thoughts </h2>
           <p>
-            It was a fun project to work on. I explored Stack Overflow's API documentation and improved my React/CSS
-            skills. I use this app from time to time to find good questions and learn from them.{' '}
+            It was an enjoyable project to undertake. I delved into Stack Overflow's API documentation and honed my
+            React/CSS skills. I periodically use this application to discover valuable questions and further my
+            learning.
           </p>
         </main>
         <div className={styles.navigationContainer}>

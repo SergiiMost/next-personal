@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <span>Sergii Mostovyi, 2022</span>
+        <span>Sergii Mostovyi, 2023</span>
         <div className={styles.footerIconsWrapper}>
           <div className={styles.iconContainer}>
             <a href='https://github.com/SergiiMost' target='_blank' rel='noreferrer'>

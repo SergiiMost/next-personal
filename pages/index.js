@@ -1,21 +1,8 @@
-import { SiHtml5 } from 'react-icons/si'
-import { SiCss3 } from 'react-icons/si'
-import { SiSass } from 'react-icons/si'
-import { SiJavascript } from 'react-icons/si'
-import { SiTypescript } from 'react-icons/si'
-import { SiAngular } from 'react-icons/si'
-import { SiReact } from 'react-icons/si'
-import { SiBootstrap } from 'react-icons/si'
-import { SiJava } from 'react-icons/si'
-import { FaDatabase } from 'react-icons/fa'
-import { FaNodeJs } from 'react-icons/fa'
-import { BsBoxArrowUpRight } from 'react-icons/bs'
-import { BsBoxArrowRight } from 'react-icons/bs'
-import { BsGithub } from 'react-icons/bs'
-
 import Head from 'next/head'
 import Link from 'next/link'
-
+import { SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiAngular, SiReact, SiBootstrap } from 'react-icons/si'
+import { FaDatabase, FaNodeJs } from 'react-icons/fa'
+import { BsBoxArrowUpRight, BsBoxArrowRight, BsGithub } from 'react-icons/bs'
 import Navbar from '../components/Navbar/Navbar'
 import Heading from '../components/Heading/Heading'
 import Footer from '../components/Footer/Footer'
@@ -43,9 +30,10 @@ export default function Home({ theme, toggleTheme }) {
             <span className={styles.headingPrimary}>I create interactive experiences with modern tech. </span>
           </h1>
           <h2 className={styles.headingDescription}>
-            I am a <span className='u-fw-400'>Full Stack Web Developer</span> with a keen interest in web technology.
-            I’m able to quickly learn new tools and technologies when needed. I’m always motivated by a challenge and
-            well-organized to deliver consistent results.{' '}
+            I am a <span className='u-fw-400'>Software Developer</span> with a strong interest in web technology, where
+            I stay informed about the latest trends and focus on creating user-friendly experiences. Additionally, I'm
+            increasingly drawn to the potential of cloud development, recognizing its ability to enhance and scale web
+            applications.
           </h2>
           <p>
             Currently a web developer at{'  '}
@@ -103,12 +91,21 @@ export default function Home({ theme, toggleTheme }) {
                   <span>Node.js</span>
                 </span>
                 <span className={styles.techContainer}>
-                  <SiJava color='#E06E23' />
-                  <span>Java</span>
-                </span>
-                <span className={styles.techContainer}>
                   <FaDatabase color='#336791' />
-                  <span>PostgreSQL</span>
+                  <span>SQL</span>
+                </span>
+              </div>
+            </div>
+            <div className={styles.technologiesContainer}>
+              <span className={styles.techDirection}>Cloud: </span>
+              <div>
+                <span className={styles.techContainer}>
+                  {/* <VscAzure color='#3ab9f0' /> */}
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' height='1em' width='1em' fill='#155ea7'>
+                    <title>microsoft-azure</title>
+                    <path d='M13.05,4.24L6.56,18.05L2,18L7.09,9.24L13.05,4.24M13.75,5.33L22,19.76H6.74L16.04,18.1L11.17,12.31L13.75,5.33Z' />
+                  </svg>
+                  <span>Microsoft Azure</span>
                 </span>
               </div>
             </div>
@@ -117,79 +114,45 @@ export default function Home({ theme, toggleTheme }) {
           <div className={styles.certifications}>
             <Heading tag='h3'>certifications</Heading>
             <div className={styles.certContainer}>
-              <SiAngular size='24px' color='#d82d2f' style={{ minWidth: '24px' }} />
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#155ea7' className={styles.certSvg}>
+                <title>microsoft-azure</title>
+                <path d='M13.05,4.24L6.56,18.05L2,18L7.09,9.24L13.05,4.24M13.75,5.33L22,19.76H6.74L16.04,18.1L11.17,12.31L13.75,5.33Z' />
+              </svg>
               <span>
-                Angular Fundamentals ({' '}
-                <a href='https://www.angularacademy.ca/' target='_blank' rel='noreferrer'>
-                  Angular Academy
-                </a>{' '}
-                , Dec 2021 )
+                Microsoft Certified: Azure Developer Associate (
+                <a
+                  href='https://learn.microsoft.com/en-us/certifications/exams/az-204/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  AZ-204
+                </a>
+                , Sep 2023)
               </span>
             </div>
             <div className={styles.certContainer}>
-              <SiAngular size='24px' color='#d82d2f' style={{ minWidth: '24px' }} />
+              <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#155ea7' className={styles.certSvg}>
+                <title>microsoft-azure</title>
+                <path d='M13.05,4.24L6.56,18.05L2,18L7.09,9.24L13.05,4.24M13.75,5.33L22,19.76H6.74L16.04,18.1L11.17,12.31L13.75,5.33Z' />
+              </svg>
               <span>
-                Advanced Angular ({' '}
-                <a href='https://www.angularacademy.ca/' target='_blank' rel='noreferrer'>
-                  Angular Academy
-                </a>{' '}
-                , May 2022 )
+                Microsoft Certified: Azure Fundamentals ({' '}
+                <a
+                  href='https://learn.microsoft.com/en-us/certifications/exams/az-900/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  AZ-900
+                </a>
+                , Jan 2023)
               </span>
             </div>
           </div>
           {/* Projects*/}
           <div className={styles.projects} id='projects'>
             <Heading tag='h3'> projects</Heading>
-            {/* <div className={styles.projectContainer}>
-              <h3 className={styles.projectHeader}>Shopify's internship challenge </h3>
-              <p className={styles.projectDescription}>
-                a webpage that can search{' '}
-                <a href='https://www.omdbapi.com/' target='_blank' rel='noreferrer'>
-                  OMDb API{' '}
-                </a>{' '}
-                for movies and allow users to nominate favorite films that they feel should be up for nominations
-              </p>
-              <div className={styles.technologiesContainer}>
-                <span className='u-mr-10'>technologies:</span>
-                <span className={styles.techContainer}>
-                  <SiReact color='#61DAFB' />
-                  <span>React</span>
-                </span>
-                <span className={styles.techContainer}>
-                  <SiCss3 color='#2862E9' />
-                  <span>CSS</span>
-                </span>
-              </div>
-              <div className={styles.projectLinksContainer}>
-                <Link href='/projects/shopify-internship-challenge'>
-                  <a className={styles.projectLink}>
-                    <BsBoxArrowRight />
-                    read more
-                  </a>
-                </Link>
-                <a
-                  href='https://github.com/SergiiMost/shoppies'
-                  target='_blank'
-                  rel='noreferrer'
-                  className={styles.projectLink}
-                >
-                  <BsGithub />
-                  code
-                </a>
-                <a
-                  href='https://sergiimost.github.io/shoppies/'
-                  target='_blank'
-                  rel='noreferrer'
-                  className={styles.projectLink}
-                >
-                  <BsBoxArrowUpRight />
-                  visit
-                </a>
-              </div>
-            </div> */}
-            {/*Project 2*/}
             <div className={styles.projectContainer}>
-              <h3 className={styles.projectHeader}>Stackoverflow's filter </h3>
+              <h3 className={styles.projectHeader}>StackOverflow's filter </h3>
               <p className={styles.projectDescription}>
                 a web app that makes it easy to select good questions (typically 3 upvotes or more) within a specified
                 time on Stack Overflow
