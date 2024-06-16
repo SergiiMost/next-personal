@@ -139,7 +139,7 @@ export default function SoFilter({ theme, toggleTheme }) {
             The Chimp Test is a test of working memory for numerals, made famous by a study at the Primate Research
             Institute at Kyoto University that found chimpanzees can outperform humans on this task. You can watch a
             chimpanzee taking the test in this
-            <a target='_blank' href='https://www.youtube.com/watch?v=zsXP8qeFF6A' rel='nofollow'>
+            <a target='_blank' href='https://www.youtube.com/watch?v=zsXP8qeFF6A' rel='noreferrer'>
               {' '}
               YouTube video{' '}
             </a>
