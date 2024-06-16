@@ -32,7 +32,7 @@ export default function SoFilter({ theme, toggleTheme }) {
         <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1'></meta>
         <meta
           name='description'
-          content='This page provides a detailed overview of a web application that makes it easy to select good questions within a selected period of time on Stack Overflow.'
+          content='This  page provides a detailed overview of a web application that makes it easy to select good questions within a selected period of time on Stack Overflow.'
         />
         <meta name='author' content='Sergii Mostovyi'></meta>
       </Head>
