@@ -39,7 +39,9 @@ export default function SoFilter({ theme, toggleTheme }) {
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <div className='content-container so-filter'>
         <div className={styles.headingContainer}>
-          <Heading tag='h1'>Stack Overflow's filter</Heading>
+          <Heading tag='h1' textCenter={true}>
+            Stack Overflow's filter
+          </Heading>
           <div className={styles.imageContainer}>
             <figure>
               <Zoom shouldRespectMaxDimension='true' overlayBgColorEnd={overlayColor}>
@@ -58,10 +60,10 @@ export default function SoFilter({ theme, toggleTheme }) {
         <main>
           <h2 className={styles.headerSecondary}>Project context</h2>
           <p className='u-mb-10'>
-            I'm a devoted Stack Overflow (SO) enthusiast with approximately 2.3k reputation points on the platform. SO
-            is a remarkably well-engineered platform. However, I had a desire to efficiently identify high-quality
-            questions within a specified timeframe. In this context, 'good questions' typically refer to those that
-            receive three or more upvotes.
+            I'm a devoted Stack Overflow (SO) enthusiast with approximately 2.6k reputation points on the platform. SO
+            is a remarkably well-engineered site. However, I wanted to efficiently identify high-quality questions
+            within a specified timeframe. In this context, 'good questions' typically refer to those that receive three
+            or more upvotes.
           </p>
           <p className='u-mb-10'>
             As far as I'm aware, Stack Overflow's user interface lacks the functionality to easily search for questions

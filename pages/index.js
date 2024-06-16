@@ -1,6 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiAngular, SiReact, SiBootstrap } from 'react-icons/si'
+import {
+  SiHtml5,
+  SiCss3,
+  SiSass,
+  SiJavascript,
+  SiTypescript,
+  SiAngular,
+  SiReact,
+  SiBootstrap,
+  SiCsharp,
+  SiCloudflare,
+} from 'react-icons/si'
 import { FaDatabase, FaNodeJs } from 'react-icons/fa'
 import { BsBoxArrowUpRight, BsBoxArrowRight, BsGithub } from 'react-icons/bs'
 import Navbar from '../components/Navbar/Navbar'
@@ -26,19 +37,19 @@ export default function Home({ theme, toggleTheme }) {
       <div className='content-container'>
         <header>
           <h1 className={styles.headingContainer}>
-            <span className={styles.headingSecondary}>Sergii Mostovyi</span>
+            <span className={styles.headingSecondary}>Sergii Mostovyi &nbsp;</span>
             <span className={styles.headingPrimary}>I create interactive experiences with modern tech. </span>
           </h1>
-          <h2 className={styles.headingDescription}>
-            I am a <span className='u-fw-400'>Software Developer</span> with a strong interest in web technology, where
-            I stay informed about the latest trends and focus on creating user-friendly experiences. Additionally, I'm
+          <p className={styles.headingDescription}>
+            I am a <span className='u-fw-400'>software developer</span> with a strong interest in web technology. I stay
+            informed about the latest trends and focus on creating user-friendly experiences. <br /> Additionally, I am
             increasingly drawn to the potential of cloud development, recognizing its ability to enhance and scale web
             applications.
-          </h2>
+          </p>
           <p>
             Currently a web developer at{'  '}
-            <a href='https://www.visualantidote.com/' rel='noreferrer' target='_blank'>
-              Visual Antidote
+            <a href='https://www.burstingsilver.com/' rel='noreferrer' target='_blank'>
+              Bursting Silver
             </a>
             .
           </p>
@@ -87,6 +98,10 @@ export default function Home({ theme, toggleTheme }) {
               <span className={styles.techDirection}>Back-end: </span>
               <div>
                 <span className={styles.techContainer}>
+                  <SiCsharp color='#9c75d5' />
+                  <span>C#</span>
+                </span>
+                <span className={styles.techContainer}>
                   <FaNodeJs color='#689F63' />
                   <span>Node.js</span>
                 </span>
@@ -100,12 +115,15 @@ export default function Home({ theme, toggleTheme }) {
               <span className={styles.techDirection}>Cloud: </span>
               <div>
                 <span className={styles.techContainer}>
-                  {/* <VscAzure color='#3ab9f0' /> */}
                   <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' height='1em' width='1em' fill='#155ea7'>
                     <title>microsoft-azure</title>
                     <path d='M13.05,4.24L6.56,18.05L2,18L7.09,9.24L13.05,4.24M13.75,5.33L22,19.76H6.74L16.04,18.1L11.17,12.31L13.75,5.33Z' />
                   </svg>
                   <span>Microsoft Azure</span>
+                </span>
+                <span className={styles.techContainer}>
+                  <SiCloudflare color='#f6821f' />
+                  <span>Cloudflare</span>
                 </span>
               </div>
             </div>
@@ -149,8 +167,40 @@ export default function Home({ theme, toggleTheme }) {
             </div>
           </div>
           {/* Projects*/}
+
           <div className={styles.projects} id='projects'>
             <Heading tag='h3'> projects</Heading>
+            <div className={styles.projectContainer}>
+              <h3 className={styles.projectHeader}>Cognitive Gym </h3>
+              <p className={styles.projectDescription}>
+                a web app that lets you take cognitive tests such as Calculation Speed, Chimp Memory, Sequence Memory,
+                Spatial Memory, Verbal Memory, and more
+              </p>
+              <div className={styles.technologiesContainer}>
+                <span className='u-mr-10'>technologies:</span>
+                <span className={styles.techContainer}>
+                  <SiAngular color='#d82d2f' />
+                  <span>Angular</span>
+                </span>
+                <span className={styles.techContainer}>
+                  <SiCloudflare color='#f6821f' />
+                  <span>Cloudflare</span>
+                </span>
+              </div>
+              <div className={styles.projectLinksContainer}>
+                <Link href='/projects/cognitive-gym-app'>
+                  <a className={styles.projectLink}>
+                    <BsBoxArrowRight />
+                    read more
+                  </a>
+                </Link>
+                <div></div>
+                <a href='https://cognitivegym.app/' target='_blank' rel='noreferrer' className={styles.projectLink}>
+                  <BsBoxArrowUpRight />
+                  visit
+                </a>
+              </div>
+            </div>
             <div className={styles.projectContainer}>
               <h3 className={styles.projectHeader}>StackOverflow's filter </h3>
               <p className={styles.projectDescription}>

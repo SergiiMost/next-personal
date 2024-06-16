@@ -1,7 +1,3 @@
-.headingWrapper {
-  text-align: center;
-}
-
 .headingGradient span {
   font-weight: 400;
   background: linear-gradient(
@@ -19,5 +15,8 @@
 .headingPadding span {
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
-  padding: 0rem 1rem;
+}
+
+.textCenter {
+  text-align: center;
 }

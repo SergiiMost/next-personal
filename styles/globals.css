@@ -52,6 +52,12 @@ h4 {
   font-weight: 400;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .content-container {
   max-width: 720px;
   width: 100%;
@@ -89,14 +95,14 @@ a {
 }
 
 .content-container a:hover {
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .react-icons {
   vertical-align: middle;
 }
 
-.u-fw-400 {
+.u-text-center .u-fw-400 {
   font-weight: 400;
 }
 
@@ -119,6 +125,10 @@ a {
 
 .u-mb-10 {
   margin-bottom: 10px;
+}
+
+.u-mt-20 {
+  margin-top: 20px;
 }
 
 .u-mb-05 {
