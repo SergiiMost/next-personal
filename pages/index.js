@@ -164,7 +164,7 @@ export default function Home({ theme, toggleTheme }) {
           {/* Projects*/}
 
           <div className={styles.projects} id="projects">
-            <Heading tag="h3">recent projects</Heading>
+            <Heading tag="h3">Recent Public Projects</Heading>
             <div className={styles.projectContainer}>
               <h3 className={styles.projectHeader}>Cognitive Gym </h3>
               <p className={styles.projectDescription}>
